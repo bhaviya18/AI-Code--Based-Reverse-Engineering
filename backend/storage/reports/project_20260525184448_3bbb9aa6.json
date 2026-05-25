@@ -1,0 +1,77 @@
+{
+    "message": "Project analyzed successfully",
+    "project_id": "project_20260525184448_3bbb9aa6",
+    "project_type": "Java Application",
+    "primary_language": "Java",
+    "languages": {
+        "Java": 1
+    },
+    "frameworks": [],
+    "important_files": [
+        "TradeMaster-master\\README.md"
+    ],
+    "entry_points": [
+        "TradeMaster-master\\TradeMaster.java"
+    ],
+    "execution_flow": {
+        "TradeMaster-master\\TradeMaster.java": {
+            "imports": []
+        }
+    },
+    "workflow_reconstruction": [],
+    "relationship_map": [],
+    "architecture": [],
+    "summary": "Project Type: Java Application\nFrameworks: \nLanguages: Java\nMain Entry Point: TradeMaster-master\\TradeMaster.java",
+    "ai_explanation": "AI explanation temporarily unavailable. Deterministic project analysis still succeeded.",
+    "dependency_map": {},
+    "project_tree": {
+        "TradeMaster-master": {
+            "project.class": {
+                "type": "file",
+                "size": 4043
+            },
+            "README.md": {
+                "type": "file",
+                "size": 1026
+            },
+            "TradeMaster.class": {
+                "type": "file",
+                "size": 4051
+            },
+            "TradeMaster.java": {
+                "type": "file",
+                "size": 2805
+            },
+            "users.txt": {
+                "type": "file",
+                "size": 59
+            }
+        }
+    },
+    "raw_structure": {
+        "TradeMaster-master": {
+            "type": "directory",
+            "size": null
+        },
+        "TradeMaster-master\\project.class": {
+            "type": "file",
+            "size": 4043
+        },
+        "TradeMaster-master\\README.md": {
+            "type": "file",
+            "size": 1026
+        },
+        "TradeMaster-master\\TradeMaster.class": {
+            "type": "file",
+            "size": 4051
+        },
+        "TradeMaster-master\\TradeMaster.java": {
+            "type": "file",
+            "size": 2805
+        },
+        "TradeMaster-master\\users.txt": {
+            "type": "file",
+            "size": 59
+        }
+    }
+}

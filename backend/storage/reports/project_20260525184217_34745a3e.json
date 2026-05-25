@@ -1,0 +1,533 @@
+{
+    "message": "Project analyzed successfully",
+    "project_id": "project_20260525184217_34745a3e",
+    "project_type": "Frontend Web Application",
+    "primary_language": "JavaScript",
+    "languages": {
+        "JavaScript": 7,
+        "HTML": 1,
+        "CSS": 2
+    },
+    "frameworks": [
+        "React",
+        "Vite"
+    ],
+    "important_files": [
+        "JobSync-main\\package.json",
+        "JobSync-main\\README.md"
+    ],
+    "entry_points": [
+        "JobSync-main\\src\\main.jsx"
+    ],
+    "execution_flow": {
+        "JobSync-main\\src\\main.jsx": {
+            "imports": [
+                "react",
+                "react-dom/client",
+                "./App.jsx",
+                "./index.css"
+            ]
+        }
+    },
+    "workflow_reconstruction": [
+        {
+            "file": "App.jsx",
+            "steps": [
+                "Uses React framework",
+                "Handles routing/navigation",
+                "Connects Firebase services",
+                "Uses components: Header, JobCard, Navbar, Aboutus, Admin, AdminRegister, ContactUs, Signin, Signup, SearchBar"
+            ]
+        },
+        {
+            "file": "main.jsx",
+            "steps": [
+                "Initializes frontend application",
+                "Uses React framework",
+                "Loads App.jsx root component"
+            ]
+        }
+    ],
+    "relationship_map": [
+        {
+            "source": "eslint.config.js",
+            "targets": []
+        },
+        {
+            "source": "postcss.config.js",
+            "targets": []
+        },
+        {
+            "source": "tailwind.config.js",
+            "targets": []
+        },
+        {
+            "source": "UserLists.js",
+            "targets": []
+        },
+        {
+            "source": "vite.config.js",
+            "targets": []
+        },
+        {
+            "source": "App.jsx",
+            "targets": [
+                "App.css",
+                "JobDummyData",
+                "Header",
+                "JobCard",
+                "Navbar",
+                "Aboutus",
+                "Admin",
+                "AdminRegister",
+                "ContactUs",
+                "Signin",
+                "Signup",
+                "SearchBar",
+                "firebase.config"
+            ]
+        },
+        {
+            "source": "firebase.config.js",
+            "targets": []
+        },
+        {
+            "source": "JobDummyData.js",
+            "targets": []
+        },
+        {
+            "source": "main.jsx",
+            "targets": [
+                "App.jsx",
+                "index.css"
+            ]
+        },
+        {
+            "source": "index.jsx",
+            "targets": []
+        },
+        {
+            "source": "index.jsx",
+            "targets": []
+        },
+        {
+            "source": "index.jsx",
+            "targets": []
+        },
+        {
+            "source": "Aboutus.jsx",
+            "targets": []
+        },
+        {
+            "source": "Admin.jsx",
+            "targets": []
+        },
+        {
+            "source": "AdminRegister.jsx",
+            "targets": []
+        },
+        {
+            "source": "ContactUs.jsx",
+            "targets": []
+        },
+        {
+            "source": "Signin.jsx",
+            "targets": []
+        },
+        {
+            "source": "Signup.jsx",
+            "targets": []
+        },
+        {
+            "source": "index.jsx",
+            "targets": []
+        }
+    ],
+    "architecture": [
+        {
+            "path": "/JobSync-main/public",
+            "role": "Public static files"
+        },
+        {
+            "path": "/JobSync-main/src",
+            "role": "Main source code"
+        },
+        {
+            "path": "/JobSync-main/src/assets",
+            "role": "Static assets"
+        },
+        {
+            "path": "/JobSync-main/src/components",
+            "role": "Reusable UI components"
+        },
+        {
+            "path": "/JobSync-main/src/components/Pages",
+            "role": "Application pages/views"
+        }
+    ],
+    "summary": "Project Type: Frontend Web Application\nFrameworks: React, Vite\nLanguages: JavaScript, HTML, CSS\nMain Entry Point: JobSync-main\\src\\main.jsx\nDetected Architecture:\n- /JobSync-main/public \u2192 Public static files\n- /JobSync-main/src \u2192 Main source code\n- /JobSync-main/src/assets \u2192 Static assets\n- /JobSync-main/src/components \u2192 Reusable UI components\n- /JobSync-main/src/components/Pages \u2192 Application pages/views",
+    "ai_explanation": "PROJECT OVERVIEW:\nThis is a standard frontend web application built using React for UI development and Vite for a fast build and development experience.\n\nEXECUTION FLOW:\nThe application starts by executing `JobSync-main\\\\src\\\\main.jsx`. This file initializes React and renders the primary `App.jsx` component into the browser's Document Object Model (DOM). It also imports global styles from `index.css`.\n\nARCHITECTURE:\n- `/JobSync-main/public`: Stores static assets like `index.html` or images that are served directly without processing by Vite.\n- `/JobSync-main/src`: Contains all the application's core source code, including components, pages, and main entry files.\n- `/JobSync-main/src/assets`: Holds static resources such as images, icons, or fonts that are bundled with the application.\n- `/JobSync-main/src/components`: Houses small, reusable UI components that can be shared across different pages or sections.\n- `/JobSync-main/src/components/Pages`: Contains the top-level components, each representing a distinct page or view within the application.\n\nTECH STACK:\n- **Frameworks**: React (for building user interfaces), Vite (for build tooling and development server).\n- **Languages**: Primarily JavaScript/TypeScript (implied), HTML, CSS.\n\nNEW DEVELOPER GUIDE:\n- **Where to start reading**: Begin with `JobSync-main\\\\src\\\\main.jsx` to understand the application's initial setup.\n- **Important files**: Next, examine `App.jsx` (imported by `main.jsx`) to see the main application structure or routing.\n- **Understanding order**: After `App.jsx`, explore `JobSync-main\\\\src\\\\components\\\\Pages` to grasp how different views are organized, and then `JobSync-main\\\\src\\\\components` for reusable UI elements. This progression helps in understanding the app's startup, page structure, and component breakdown.",
+    "dependency_map": {
+        "JobSync-main\\eslint.config.js": [
+            "@eslint/js",
+            "eslint-plugin-react",
+            "eslint-plugin-react-hooks",
+            "eslint-plugin-react-refresh",
+            "globals"
+        ],
+        "JobSync-main\\postcss.config.js": [],
+        "JobSync-main\\tailwind.config.js": [],
+        "JobSync-main\\UserLists.js": [],
+        "JobSync-main\\vite.config.js": [
+            "@vitejs/plugin-react",
+            "vite"
+        ],
+        "JobSync-main\\src\\App.jsx": [
+            "./App.css",
+            "./JobDummyData",
+            "./components/Header",
+            "./components/JobCard",
+            "./components/Navbar",
+            "./components/Pages/Aboutus",
+            "./components/Pages/Admin",
+            "./components/Pages/AdminRegister",
+            "./components/Pages/ContactUs",
+            "./components/Pages/Signin",
+            "./components/Pages/Signup",
+            "./components/SearchBar",
+            "./firebase.config",
+            "firebase/firestore",
+            "react",
+            "react-router-dom"
+        ],
+        "JobSync-main\\src\\firebase.config.js": [
+            "firebase/analytics",
+            "firebase/app",
+            "firebase/firestore"
+        ],
+        "JobSync-main\\src\\JobDummyData.js": [],
+        "JobSync-main\\src\\main.jsx": [
+            "./App.jsx",
+            "./index.css",
+            "react",
+            "react-dom/client"
+        ],
+        "JobSync-main\\src\\components\\Header\\index.jsx": [],
+        "JobSync-main\\src\\components\\JobCard\\index.jsx": [
+            "dayjs",
+            "prop-types"
+        ],
+        "JobSync-main\\src\\components\\Navbar\\index.jsx": [
+            "react-icons/fa",
+            "react-router-dom"
+        ],
+        "JobSync-main\\src\\components\\Pages\\Aboutus.jsx": [],
+        "JobSync-main\\src\\components\\Pages\\Admin.jsx": [
+            "react-router-dom"
+        ],
+        "JobSync-main\\src\\components\\Pages\\AdminRegister.jsx": [
+            "react",
+            "react-router-dom"
+        ],
+        "JobSync-main\\src\\components\\Pages\\ContactUs.jsx": [],
+        "JobSync-main\\src\\components\\Pages\\Signin.jsx": [
+            "react",
+            "react-router-dom"
+        ],
+        "JobSync-main\\src\\components\\Pages\\Signup.jsx": [
+            "react",
+            "react-router-dom"
+        ],
+        "JobSync-main\\src\\components\\SearchBar\\index.jsx": [
+            "react-icons/fa"
+        ]
+    },
+    "project_tree": {
+        "JobSync-main": {
+            ".gitignore": {
+                "type": "file",
+                "size": 253
+            },
+            "eslint.config.js": {
+                "type": "file",
+                "size": 1044
+            },
+            "index.html": {
+                "type": "file",
+                "size": 361
+            },
+            "package-lock.json": {
+                "type": "file",
+                "size": 232582
+            },
+            "package.json": {
+                "type": "file",
+                "size": 877
+            },
+            "postcss.config.js": {
+                "type": "file",
+                "size": 80
+            },
+            "public": {
+                "vite.svg": {
+                    "type": "file",
+                    "size": 1497
+                }
+            },
+            "README.md": {
+                "type": "file",
+                "size": 1319
+            },
+            "src": {
+                "App.css": {
+                    "type": "file",
+                    "size": 606
+                },
+                "App.jsx": {
+                    "type": "file",
+                    "size": 3327
+                },
+                "assets": {
+                    "react.svg": {
+                        "type": "file",
+                        "size": 4126
+                    }
+                },
+                "components": {
+                    "Header": {
+                        "index.jsx": {
+                            "type": "file",
+                            "size": 2280
+                        }
+                    },
+                    "JobCard": {
+                        "index.jsx": {
+                            "type": "file",
+                            "size": 1942
+                        }
+                    },
+                    "Navbar": {
+                        "index.jsx": {
+                            "type": "file",
+                            "size": 5481
+                        }
+                    },
+                    "Pages": {
+                        "Aboutus.jsx": {
+                            "type": "file",
+                            "size": 4008
+                        },
+                        "Admin.jsx": {
+                            "type": "file",
+                            "size": 2158
+                        },
+                        "AdminRegister.jsx": {
+                            "type": "file",
+                            "size": 3690
+                        },
+                        "ContactUs.jsx": {
+                            "type": "file",
+                            "size": 4680
+                        },
+                        "Signin.jsx": {
+                            "type": "file",
+                            "size": 1601
+                        },
+                        "Signup.jsx": {
+                            "type": "file",
+                            "size": 4412
+                        }
+                    },
+                    "SearchBar": {
+                        "index.jsx": {
+                            "type": "file",
+                            "size": 5512
+                        }
+                    }
+                },
+                "firebase.config.js": {
+                    "type": "file",
+                    "size": 720
+                },
+                "index.css": {
+                    "type": "file",
+                    "size": 4451
+                },
+                "JobDummyData.js": {
+                    "type": "file",
+                    "size": 6142
+                },
+                "main.jsx": {
+                    "type": "file",
+                    "size": 229
+                }
+            },
+            "tailwind.config.js": {
+                "type": "file",
+                "size": 183
+            },
+            "UserLists.js": {
+                "type": "file",
+                "size": 1557
+            },
+            "vite.config.js": {
+                "type": "file",
+                "size": 161
+            }
+        }
+    },
+    "raw_structure": {
+        "JobSync-main": {
+            "type": "directory",
+            "size": null
+        },
+        "JobSync-main\\.gitignore": {
+            "type": "file",
+            "size": 253
+        },
+        "JobSync-main\\eslint.config.js": {
+            "type": "file",
+            "size": 1044
+        },
+        "JobSync-main\\index.html": {
+            "type": "file",
+            "size": 361
+        },
+        "JobSync-main\\package-lock.json": {
+            "type": "file",
+            "size": 232582
+        },
+        "JobSync-main\\package.json": {
+            "type": "file",
+            "size": 877
+        },
+        "JobSync-main\\postcss.config.js": {
+            "type": "file",
+            "size": 80
+        },
+        "JobSync-main\\public": {
+            "type": "directory",
+            "size": null
+        },
+        "JobSync-main\\README.md": {
+            "type": "file",
+            "size": 1319
+        },
+        "JobSync-main\\src": {
+            "type": "directory",
+            "size": null
+        },
+        "JobSync-main\\tailwind.config.js": {
+            "type": "file",
+            "size": 183
+        },
+        "JobSync-main\\UserLists.js": {
+            "type": "file",
+            "size": 1557
+        },
+        "JobSync-main\\vite.config.js": {
+            "type": "file",
+            "size": 161
+        },
+        "JobSync-main\\public\\vite.svg": {
+            "type": "file",
+            "size": 1497
+        },
+        "JobSync-main\\src\\App.css": {
+            "type": "file",
+            "size": 606
+        },
+        "JobSync-main\\src\\App.jsx": {
+            "type": "file",
+            "size": 3327
+        },
+        "JobSync-main\\src\\assets": {
+            "type": "directory",
+            "size": null
+        },
+        "JobSync-main\\src\\components": {
+            "type": "directory",
+            "size": null
+        },
+        "JobSync-main\\src\\firebase.config.js": {
+            "type": "file",
+            "size": 720
+        },
+        "JobSync-main\\src\\index.css": {
+            "type": "file",
+            "size": 4451
+        },
+        "JobSync-main\\src\\JobDummyData.js": {
+            "type": "file",
+            "size": 6142
+        },
+        "JobSync-main\\src\\main.jsx": {
+            "type": "file",
+            "size": 229
+        },
+        "JobSync-main\\src\\assets\\react.svg": {
+            "type": "file",
+            "size": 4126
+        },
+        "JobSync-main\\src\\components\\Header": {
+            "type": "directory",
+            "size": null
+        },
+        "JobSync-main\\src\\components\\JobCard": {
+            "type": "directory",
+            "size": null
+        },
+        "JobSync-main\\src\\components\\Navbar": {
+            "type": "directory",
+            "size": null
+        },
+        "JobSync-main\\src\\components\\Pages": {
+            "type": "directory",
+            "size": null
+        },
+        "JobSync-main\\src\\components\\SearchBar": {
+            "type": "directory",
+            "size": null
+        },
+        "JobSync-main\\src\\components\\Header\\index.jsx": {
+            "type": "file",
+            "size": 2280
+        },
+        "JobSync-main\\src\\components\\JobCard\\index.jsx": {
+            "type": "file",
+            "size": 1942
+        },
+        "JobSync-main\\src\\components\\Navbar\\index.jsx": {
+            "type": "file",
+            "size": 5481
+        },
+        "JobSync-main\\src\\components\\Pages\\Aboutus.jsx": {
+            "type": "file",
+            "size": 4008
+        },
+        "JobSync-main\\src\\components\\Pages\\Admin.jsx": {
+            "type": "file",
+            "size": 2158
+        },
+        "JobSync-main\\src\\components\\Pages\\AdminRegister.jsx": {
+            "type": "file",
+            "size": 3690
+        },
+        "JobSync-main\\src\\components\\Pages\\ContactUs.jsx": {
+            "type": "file",
+            "size": 4680
+        },
+        "JobSync-main\\src\\components\\Pages\\Signin.jsx": {
+            "type": "file",
+            "size": 1601
+        },
+        "JobSync-main\\src\\components\\Pages\\Signup.jsx": {
+            "type": "file",
+            "size": 4412
+        },
+        "JobSync-main\\src\\components\\SearchBar\\index.jsx": {
+            "type": "file",
+            "size": 5512
+        }
+    }
+}

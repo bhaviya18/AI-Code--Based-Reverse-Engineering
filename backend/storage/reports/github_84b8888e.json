@@ -1,0 +1,154 @@
+{
+    "message": "Project analyzed successfully",
+    "project_id": "github_84b8888e",
+    "project_type": "Python Project",
+    "primary_language": "Python",
+    "languages": {
+        "Python": 5
+    },
+    "frameworks": [],
+    "important_files": [
+        "README.md"
+    ],
+    "entry_points": [
+        "src\\main.py"
+    ],
+    "execution_flow": {
+        "src\\main.py": {
+            "imports": []
+        }
+    },
+    "workflow_reconstruction": [
+        {
+            "file": "main.py",
+            "steps": [
+                "Starts backend application"
+            ]
+        }
+    ],
+    "relationship_map": [
+        {
+            "source": "run_soc.py",
+            "targets": []
+        },
+        {
+            "source": "dashboard.py",
+            "targets": []
+        },
+        {
+            "source": "main.py",
+            "targets": []
+        },
+        {
+            "source": "windows_logs.py",
+            "targets": []
+        },
+        {
+            "source": "windows_to_alerts.py",
+            "targets": []
+        }
+    ],
+    "architecture": [
+        {
+            "path": "/src",
+            "role": "Main source code"
+        }
+    ],
+    "summary": "Project Type: Python Project\nFrameworks: \nLanguages: Python\nMain Entry Point: src\\main.py\nDetected Architecture:\n- /src \u2192 Main source code",
+    "ai_explanation": "PROJECT OVERVIEW:\nThis is a very basic Python project with a single entry point. It appears to be a simple application or in its initial stages, with all primary logic contained within one main file.\n\nEXECUTION FLOW:\nThe application starts by executing the `src/main.py` file. Currently, `main.py` does not import any other modules, meaning all startup logic is self-contained within this single script.\n\nARCHITECTURE:\n- `/src`: This directory is designated for all the main source code of the application.\n\nTECH STACK:\n- Python\n\nNEW DEVELOPER GUIDE:\n- Start by reading `src/main.py`. This is the application's sole entry point and contains all current logic.\n- The most important file to understand is `src/main.py`.\n- To grasp the project's current state, simply read through `src/main.py` as it's a self-contained script with no documented external dependencies or complex module interactions.",
+    "dependency_map": {
+        "run_soc.py": [],
+        "src\\dashboard.py": [
+            "flask"
+        ],
+        "src\\main.py": [
+            "datetime",
+            "dotenv",
+            "google"
+        ],
+        "src\\windows_logs.py": [],
+        "src\\windows_to_alerts.py": [
+            "datetime"
+        ]
+    },
+    "project_tree": {
+        ".gitignore": {
+            "type": "file",
+            "size": 47
+        },
+        "data": {
+            "alerts.json": {
+                "type": "file",
+                "size": 572
+            }
+        },
+        "README.md": {
+            "type": "file",
+            "size": 2336
+        },
+        "run_soc.py": {
+            "type": "file",
+            "size": 363
+        },
+        "src": {
+            "dashboard.py": {
+                "type": "file",
+                "size": 6243
+            },
+            "main.py": {
+                "type": "file",
+                "size": 4734
+            },
+            "windows_logs.py": {
+                "type": "file",
+                "size": 533
+            },
+            "windows_to_alerts.py": {
+                "type": "file",
+                "size": 1551
+            }
+        }
+    },
+    "raw_structure": {
+        ".gitignore": {
+            "type": "file",
+            "size": 47
+        },
+        "data": {
+            "type": "directory",
+            "size": null
+        },
+        "README.md": {
+            "type": "file",
+            "size": 2336
+        },
+        "run_soc.py": {
+            "type": "file",
+            "size": 363
+        },
+        "src": {
+            "type": "directory",
+            "size": null
+        },
+        "data\\alerts.json": {
+            "type": "file",
+            "size": 572
+        },
+        "src\\dashboard.py": {
+            "type": "file",
+            "size": 6243
+        },
+        "src\\main.py": {
+            "type": "file",
+            "size": 4734
+        },
+        "src\\windows_logs.py": {
+            "type": "file",
+            "size": 533
+        },
+        "src\\windows_to_alerts.py": {
+            "type": "file",
+            "size": 1551
+        }
+    }
+}

@@ -1,0 +1,207 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body{
+    background: linear-gradient(to right, rgb(15, 23, 42), rgb(118, 33, 183), rgb(15, 23, 42));
+  
+  
+  }
+} */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    /* background-color: #ECF0F1;  */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #34495E; /* Dark gray text for readability */
+    margin: 0;
+    padding: 0;
+  
+        /* background: linear-gradient(to right, #2a1a30, #190c25); 
+         */
+       background: linear-gradient(rgb(17, 24, 39), rgb(88, 28, 135), rgb(141, 81, 243));
+  }
+
+  /* Main Container for the Job Listings */
+  .job-listings-container {
+    padding: 20px;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  /* On hover, make the job card container more dynamic */
+  .job-listings-container:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+
+  /* Header Style */
+  .header {
+    background-color: #2980B9; /* Vibrant Blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+
+  /* Buttons for Apply Now */
+  .apply-button {
+    background-color: #F39C12; /* Warm Yellow */
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .apply-button:hover {
+    background-color: #F1C40F; /* Lighter Yellow on hover */
+    cursor: pointer;
+  }
+
+  /* Input fields with modern design */
+  .input-field {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #BDC3C7; /* Light Gray border */
+    font-size: 1rem;
+    background-color: white;
+    color: #34495E;
+    transition: border-color 0.3s ease;
+  }
+
+  .input-field:focus {
+    border-color: #2980B9; /* Vibrant Blue on focus */
+    outline: none;
+  }
+
+  /* Search Bar Design */
+  .search-bar {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .search-bar select {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #BDC3C7;
+    background-color: white;
+    color: #34495E;
+    transition: all 0.3s ease;
+  }
+
+  .search-bar select:hover {
+    border-color: #2980B9; /* Hover effect for select fields */
+  }
+
+  .search-bar button {
+    padding: 12px 20px;
+    background-color: #2980B9; /* Vibrant Blue */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .search-bar button:hover {
+    background-color: #1D6FA4; /* Darker blue on hover */
+    cursor: pointer;
+  }
+
+  /* Job Card */
+  .job-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .job-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+
+  .job-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .job-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2C3E50; /* Dark Blue for title */
+  }
+
+  .company-name {
+    color: #2980B9; /* Vibrant Blue for company */
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  /* Job Type and Location */
+  .job-details {
+    color: #BDC3C7; /* Light Gray text for details */
+    font-size: 0.875rem;
+  }
+
+  /* Tags for Skills */
+  .skill-tag {
+    background-color: #BDC3C7; /* Light Gray */
+    color: #2C3E50;
+    font-size: 0.875rem;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-right: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .skill-tag:hover {
+    background-color: #2980B9; /* Hover effect on skills */
+    color: white;
+  }
+
+  /* Footer Section */
+  footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.875rem;
+  }
+}
+
+.header {
+  background: linear-gradient(140deg,#ffffff, #7657d4, #54059a);
+  background-size: 300% 300%;
+  animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

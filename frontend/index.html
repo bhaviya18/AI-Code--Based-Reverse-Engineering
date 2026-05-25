@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>
+        AI Codebase Reverse Engineering
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>
+            AI Codebase Reverse Engineering
+        </h1>
+
+        <div class="section">
+
+            <h2>
+                Upload ZIP Project
+            </h2>
+
+            <input
+                type="file"
+                id="fileInput"
+            >
+
+            <button onclick="uploadProject()">
+                Analyze ZIP
+            </button>
+        </div>
+
+        <div class="section">
+
+            <h2>
+                Analyze GitHub Repository
+            </h2>
+
+            <input
+                type="text"
+                id="githubUrl"
+                placeholder="https://github.com/user/repo"
+            >
+
+            <button onclick="analyzeGitHub()">
+                Analyze GitHub Repo
+            </button>
+        </div>
+
+        <div class="section">
+
+            <h2>
+                Saved Reports
+            </h2>
+
+            <div id="reportList"></div>
+        </div>
+
+        <div
+            id="loading"
+            class="hidden section"
+        >
+
+            Analyzing project...
+
+        </div>
+
+        <div
+            id="results"
+            class="hidden"
+        >
+
+            <div class="section">
+
+                <h2>
+                    Project Overview
+                </h2>
+
+                <div id="projectInfo"></div>
+            </div>
+
+            <div class="section">
+
+                <h2>
+                    Frameworks
+                </h2>
+
+                <div id="frameworks"></div>
+            </div>
+
+            <div class="section">
+
+                <h2>
+                    Entry Points
+                </h2>
+
+                <div id="entryPoints"></div>
+            </div>
+
+            <div class="section">
+
+                <h2>
+                    Architecture
+                </h2>
+
+                <div id="architecture"></div>
+            </div>
+
+            <div class="section">
+
+                <h2>
+                    Workflow Reconstruction
+                </h2>
+
+                <div id="workflowData"></div>
+            </div>
+
+            <div class="section">
+
+                <h2>
+                    Dependency Relationships
+                </h2>
+
+                <div id="relationshipData"></div>
+            </div>
+
+            <div class="section">
+
+                <h2>
+                    AI Reverse Engineering Report
+                </h2>
+
+                <div id="aiExplanation"></div>
+            </div>
+
+            <div class="section">
+
+                <button onclick="downloadJSON()">
+                    Download JSON Report
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/static/js/app.js"></script>
+
+</body>
+
+</html>
